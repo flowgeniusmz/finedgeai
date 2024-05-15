@@ -149,11 +149,17 @@ def get_component_pagelinksection_styled():
     with link_container:
         link_columns_row1 = st.columns([1,20,20,1])
         with link_columns_row1[1]:
-            get_component_pagelink_styled(1)
-            get_component_pagelink_styled(3)
+            get_component_pagelink_styled_popover(1)
+            get_component_pagelink_styled_popover(3)
+            get_component_pagelink_styled_popover(5)
+            get_component_pagelink_styled_popover(7)
+            get_component_pagelink_styled_popover(9)
         with link_columns_row1[2]:
-            get_component_pagelink_styled(2)
-            get_component_pagelink_styled(4)
+            get_component_pagelink_styled_popover(2)
+            get_component_pagelink_styled_popover(4)
+            get_component_pagelink_styled_popover(6)
+            get_component_pagelink_styled_popover(8)
+            get_component_pagelink_styled_popover(10)
 
 def get_component_pagelinksection_styled_popover():
     link_container = st.container(border=False)
@@ -162,9 +168,15 @@ def get_component_pagelinksection_styled_popover():
         with link_columns_row1[1]:
             get_component_pagelink_styled_popover(1)
             get_component_pagelink_styled_popover(3)
+            get_component_pagelink_styled_popover(5)
+            get_component_pagelink_styled_popover(7)
+            get_component_pagelink_styled_popover(9)
         with link_columns_row1[2]:
             get_component_pagelink_styled_popover(2)
             get_component_pagelink_styled_popover(4)
+            get_component_pagelink_styled_popover(6)
+            get_component_pagelink_styled_popover(8)
+            get_component_pagelink_styled_popover(10)
 
         
 
@@ -217,11 +229,11 @@ def create_sidebar_nav(varPageNumber: int):
     st.page_link(page=get_pageconfig_item(varPageNumber=3, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=3, varPageConfigType="subtitles"), disabled=(varPageNumber == 3))
     st.page_link(page=get_pageconfig_item(varPageNumber=4, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=4, varPageConfigType="subtitles"), disabled=(varPageNumber == 4))
     st.page_link(page=get_pageconfig_item(varPageNumber=5, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=5, varPageConfigType="subtitles"), disabled=(varPageNumber == 5))
-    st.page_link(page=get_pageconfig_item(varPageNumber=6, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=5, varPageConfigType="subtitles"), disabled=(varPageNumber == 6))
-    st.page_link(page=get_pageconfig_item(varPageNumber=7, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=5, varPageConfigType="subtitles"), disabled=(varPageNumber == 7))
-    st.page_link(page=get_pageconfig_item(varPageNumber=8, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=5, varPageConfigType="subtitles"), disabled=(varPageNumber == 8))
-    st.page_link(page=get_pageconfig_item(varPageNumber=9, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=5, varPageConfigType="subtitles"), disabled=(varPageNumber == 9))
-    st.page_link(page=get_pageconfig_item(varPageNumber=10, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=5, varPageConfigType="subtitles"), disabled=(varPageNumber == 10))
+    st.page_link(page=get_pageconfig_item(varPageNumber=6, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=6, varPageConfigType="subtitles"), disabled=(varPageNumber == 6))
+    st.page_link(page=get_pageconfig_item(varPageNumber=7, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=7, varPageConfigType="subtitles"), disabled=(varPageNumber == 7))
+    st.page_link(page=get_pageconfig_item(varPageNumber=8, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=8, varPageConfigType="subtitles"), disabled=(varPageNumber == 8))
+    st.page_link(page=get_pageconfig_item(varPageNumber=9, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=9, varPageConfigType="subtitles"), disabled=(varPageNumber == 9))
+    st.page_link(page=get_pageconfig_item(varPageNumber=10, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=10, varPageConfigType="subtitles"), disabled=(varPageNumber == 10))
 
 
 def get_blue_header(varText: str):
@@ -265,11 +277,11 @@ def popover_menu(varPageNumber: int):
         st.page_link(page=get_pageconfig_item(varPageNumber=3, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=3, varPageConfigType="subtitles"), disabled=(varPageNumber == 3))
         st.page_link(page=get_pageconfig_item(varPageNumber=4, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=4, varPageConfigType="subtitles"), disabled=(varPageNumber == 4))
         st.page_link(page=get_pageconfig_item(varPageNumber=5, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=5, varPageConfigType="subtitles"), disabled=(varPageNumber == 5))
-        st.page_link(page=get_pageconfig_item(varPageNumber=6, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=5, varPageConfigType="subtitles"), disabled=(varPageNumber == 6))
-        st.page_link(page=get_pageconfig_item(varPageNumber=7, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=5, varPageConfigType="subtitles"), disabled=(varPageNumber == 7))
-        st.page_link(page=get_pageconfig_item(varPageNumber=8, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=5, varPageConfigType="subtitles"), disabled=(varPageNumber == 8))
-        st.page_link(page=get_pageconfig_item(varPageNumber=9, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=5, varPageConfigType="subtitles"), disabled=(varPageNumber == 9))
-        st.page_link(page=get_pageconfig_item(varPageNumber=10, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=5, varPageConfigType="subtitles"), disabled=(varPageNumber == 10))
+        st.page_link(page=get_pageconfig_item(varPageNumber=6, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=6, varPageConfigType="subtitles"), disabled=(varPageNumber == 6))
+        st.page_link(page=get_pageconfig_item(varPageNumber=7, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=7, varPageConfigType="subtitles"), disabled=(varPageNumber == 7))
+        st.page_link(page=get_pageconfig_item(varPageNumber=8, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=8, varPageConfigType="subtitles"), disabled=(varPageNumber == 8))
+        st.page_link(page=get_pageconfig_item(varPageNumber=9, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=9, varPageConfigType="subtitles"), disabled=(varPageNumber == 9))
+        st.page_link(page=get_pageconfig_item(varPageNumber=10, varPageConfigType="paths"), label=get_pageconfig_item(varPageNumber=10, varPageConfigType="subtitles"), disabled=(varPageNumber == 10))
         
 def get_pageconfig_title_with_popmenu(varPageNumber: int, varDiv: bool=True):
     headercontainer = st.container(border=False)
