@@ -1,0 +1,18 @@
+[theme]
+primaryColor = "#4FAAD5"
+backgroundColor = "#0C1C2E"
+secondaryColor = "#3BB273"
+textColor = "#1F6FB2"
+
+
+[server]
+maxUploadSize=1028
+
+[client]
+showSidebarNavigation = false
+
+
+#Background: #0C1C2E (Dark Blue)
+#Green Elements: #3BB273 (Green)
+##Light Blue Elements: #4FAAD5 (Light Blue)
+##Dark Blue Elements: #1F6FB2 (Dark Blue)
